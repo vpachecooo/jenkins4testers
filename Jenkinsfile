@@ -4,16 +4,15 @@ pipeline {
          image "ruby:alpine"
       }
    }
-
    stages {
-      stage('Build') {
+      stage("Build") {
          steps {
             sh "chmod +x build/alpine.sh"
             sh "./build/alpine.sh"
             sh "bundle install"
          }
       }
-      stage('Tests') {
+      stage("Tests") {
          steps {
             sh "bundle exec cucumber -p ci"
          }
