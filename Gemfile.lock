@@ -43,9 +43,12 @@ GEM
     multi_json (1.14.1)
     multi_test (0.1.2)
     multi_xml (0.6.0)
-    nokogiri (1.10.7-x64-mingw32)
+    nokogiri (1.10.8)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.8-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     os (1.0.1)
+    pg (1.1.4)
     pg (1.1.4-x64-mingw32)
     public_suffix (4.0.3)
     rack (2.1.1)
@@ -73,10 +76,11 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
-  capybara (~> 3.22.0)
+  capybara
   cucumber (~> 3.1.2)
   httparty (~> 0.17.0)
   os (= 1.0.1)
